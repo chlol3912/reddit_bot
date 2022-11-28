@@ -2,7 +2,7 @@
 This project involved creating Reddit bots to spread propaganda about a politician.
 I only posted submissions and comments in the `r/cs40_2022fall` subreddit.
 
-###Bot Names
+### Bot Names
 My bot names were:
 - cscbot (Uses Markovify for text generation)
 - cscbot2
@@ -27,7 +27,7 @@ Here is the bit of code that makes it so the bots reply to the top upvoted comme
 First, we sort the comments by the "score" from highest to lowest.
 Then, since the highest score will come first, we reply to that comment.
 
-###Score Breakdown
+### Score Breakdown
 I believe that my grade for this project should be a 38/30.
 | (Extra) Credit  | Score |
 | ------------- | ------------- |
