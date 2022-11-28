@@ -23,7 +23,13 @@ Here are the final counts of the comments from each bot:
 ![Total count of comments from my bots](img/comment_totals.png)
 
 Here is the bit of code that makes it so the bots reply to the top upvoted comment:
-![Code snippet](img/code_snippet.png)
+```
+if len(comments_without_replies) > 0:
+  sorted_comments_without_replies = sorted(comments_without_replies, key=lambda x: x.score, reverse=True)
+  try:
+    sorted_comments_without_replies[0].reply(generate_comment())
+    print('Replied to top comment')
+```
 First, we sort the comments by the "score" from highest to lowest.
 Then, since the highest score will come first, we reply to that comment.
 
